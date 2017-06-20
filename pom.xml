@@ -4,7 +4,7 @@
 
 	<groupId>lib.PatPeter.SQLibrary</groupId>
 	<artifactId>SQLibrary</artifactId>
-	<version>7.1</version>
+	<version>7.2</version>
 	<name>SQLibrary</name>
 	<url>http://dev.bukkit.org/bukkit-plugins/sqlibrary/</url>
 	<description>Database library for Bukkit with support for 13 databases, a factory, and a query builder.</description>
@@ -14,10 +14,6 @@
 	</properties>
 	
 	<repositories>
-		<repository>
-			<id>bukkit-repo</id>
-			<url>http://repo.bukkit.org/content/groups/public/</url>
-		</repository>
 		<repository>
 			<id>spout-repo</id>
 			<url>http://nexus.spout.org/content/groups/public/</url>
@@ -29,13 +25,12 @@
 	</repositories>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.bukkit</groupId>
-			<artifactId>bukkit</artifactId>
-			<version>1.7.2-R0.2</version>
-			<type>jar</type>
-			<scope>provided</scope>
-		</dependency>
+<dependency> <!-- Spigot (this includes Spigot API, Bukkit API, Craftbukkit and NMS) -->
+    <groupId>org.spigotmc</groupId>
+    <artifactId>spigot</artifactId>
+    <version>1.12-R0.1-SNAPSHOT</version>
+    <scope>provided</scope>
+</dependency>
 		<dependency>
 			<groupId>org.spout</groupId>
 			<artifactId>spout-api</artifactId>
